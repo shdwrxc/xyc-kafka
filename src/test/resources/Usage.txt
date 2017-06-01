@@ -1,0 +1,23 @@
+生产者：
+代码：
+SimpleProducer.send("test", "some string"); //第一个参数是topic，第二个参数是字符串消息体
+
+配置文件：
+producer.properties
+bootstrap.servers：必填，服务地址
+
+使用场景：
+要发送消息的时候
+
+
+消费者：
+代码：
+SimpleConsumer.consumeSingleTopic("test", new SomeWorker()); //第一个参数是topic，第二个参数是处理类（必须实现SimpleConsumerWorker接口）
+
+配置文件
+consumer.properties
+bootstrap.servers：必填，服务地址
+group.id：选填，默认组名
+
+使用场景：
+在项目启动的时候调用下
