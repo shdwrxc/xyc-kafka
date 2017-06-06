@@ -1,24 +1,22 @@
 package org.xyc.kafka;
 
 /**
- * TODO: 这里需要写注释
- * Created by dongwt on 2017/3/1.
+ * Created by wks on 2017/3/1.
  */
 public class SimpleRecord {
 
     private String topic;
     private String key;
-
     private String value;
 
     public SimpleRecord(String topic, String key, String value) {
-        this.setTopic(topic);
-        this.setKey(key);
-        this.setValue(value);
+        this.topic = topic;
+        this.key = key;
+        this.value = value;
     }
 
     public String getTopic() {
-        return this.topic;
+        return topic;
     }
 
     public void setTopic(String topic) {
@@ -26,7 +24,7 @@ public class SimpleRecord {
     }
 
     public String getKey() {
-        return this.key;
+        return key;
     }
 
     public void setKey(String key) {
@@ -34,7 +32,7 @@ public class SimpleRecord {
     }
 
     public String getValue() {
-        return this.value;
+        return value;
     }
 
     public void setValue(String value) {
